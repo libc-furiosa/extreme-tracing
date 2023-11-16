@@ -1,0 +1,21 @@
+[package]
+name = "extracing"
+version = "0.0.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+crossbeam-channel = "0.5.6"
+crossbeam-queue = "0.3.6"
+
+extracing-attr = { path = "../extracing-attr" }
+
+[dev-dependencies]
+criterion = "0.4"
+# chrometracer = "0.1.1"
+chrometracer = { path = "../chrometracer" }
+
+[[bench]]
+name = "benchmark"
+harness = false

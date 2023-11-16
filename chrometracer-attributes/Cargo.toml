@@ -1,0 +1,21 @@
+[package]
+name = "chrometracer-attributes"
+version = "0.1.1"
+edition = "2021"
+
+authors = ["Youseok Yang <ileixe@gmail.com>"]
+categories = ["asynchronous", "development-tools::debugging", "development-tools::profiling"]
+description = "A tiny Chrometracing library."
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+proc-macro2 = "1"
+quote = "1"
+syn = { version = "1", features = ["full"] }
+
+[lib]
+proc-macro = true
+
+[dev-dependencies]
